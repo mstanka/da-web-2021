@@ -1,0 +1,12 @@
+.msg {
+  display: inline-block;
+  padding: 1rem 3rem;
+}
+
+.msg--valid {
+  background-color: greenyellow;
+}
+
+.msg--invalid {
+  background-color: red;
+}
