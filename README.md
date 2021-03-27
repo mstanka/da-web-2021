@@ -4,11 +4,14 @@
 
 [Kurz pořádný organizací Czechitas](https://kodim.cz/czechitas/daweb/)
 
+Kurz obsahuje následující témata, která si procvičujeme na zadaných úkolech.
+Toto repo obsahuje moje vlastní řešení daných úkolů.
+
 ### HTML&CSS
 
 - pozicování
 - flexbox
-- selectory
+- selektory
 - BEM
 - responzivní design
 - formuláře
