@@ -16,7 +16,7 @@ Toto repo obsahuje moje vlastní řešení daných úkolů.
 - responzivní design
 - formuláře
 
-### Základy Javascriptu
+### Javascript
 
 - vstup a výstup, objekty
 - řetězce, podmínky

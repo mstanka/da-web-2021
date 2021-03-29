@@ -8,7 +8,7 @@
 
 const updateSkill = (id, num) => {
   id.querySelector('.skill__progress').style.width = `${num}%`;
-  id.querySelector('.skill__value').innerText = `${num} / 100`;
+  id.querySelector('.skill__value').textContent = `${num} / 100`;
 };
 
 const htmlResponse = prompt(
