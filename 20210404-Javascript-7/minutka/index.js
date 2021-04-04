@@ -11,7 +11,7 @@ const audioEl = document.querySelector('audio');
 const alarmEl = document.querySelector('.alarm');
 const btnEl = document.querySelector('.btn');
 let numOfSecond = 5000;
-numOfSecond = 1000 * prompt('Zadej pocet sekund nez zacne minutka zvonit: ');
+numOfSecond = 1000 * prompt('Zadej počet sekund, než začne minutka zvonit: ');
 let ringing;
 
 const handleAlarm = () => {
@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
 
 btnEl.addEventListener('click', () => {
   clearTimeout(ringing);
-  btnEl.textContent = 'Zvoneni zruseno';
+  btnEl.textContent = 'Zvonění zrušeno';
   alarmEl.classList.remove('alarm--ring');
   audioEl.pause();
 });
