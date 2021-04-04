@@ -79,9 +79,12 @@ input[type='text'] {
   border-radius: 5px;
   padding: 0.5rem;
 }
+input[type='text']::placeholder {
+  color: inherit;
+}
 
 .time-input {
-  width: 6rem;
+  width: 3.5rem;
 }
 
 button {
@@ -91,4 +94,6 @@ button {
   border-radius: 5px;
   padding: 0.5rem;
   cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 1rem;
 }
