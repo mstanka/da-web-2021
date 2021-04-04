@@ -17,6 +17,7 @@ const countDown = () => {
     clearInterval(ringing);
     audioEl.play();
     alarmEl.classList.add('alarm--ring');
+    timeInputEl.value = '';
   }
 };
 
