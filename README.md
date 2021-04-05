@@ -8,14 +8,17 @@ Kurz obsahuje následující témata, která si procvičujeme na zadaných úkol
 Toto repo obsahuje moje vlastní řešení daných úkolů.
 
 ---
+
 ---
 
 - Saturejka - statická stránka s využitím flexboxu a responzivního designu || [Repo](https://github.com/mstanka/da-saturejka) || [View live](https://mstanka.github.io/da-saturejka/)
-- Piškvorky - [Repo](https://github.com/mstanka/da-piskvorky) || [View Live](https://mstanka.github.io/da-piskvorky/)
+- Piškvorky - hra piškvorky || [Repo](https://github.com/mstanka/da-piskvorky) || [View Live](https://mstanka.github.io/da-piskvorky/)
+- Minutka - appka pro odpočet času zadaného v minutách a sekundách || [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210410-Javascript-8/minutka3) || [View live](https://minutka3.vercel.app/)
 - Café Lóra
 - Závěrečný projekt
 
 ---
+
 ---
 
 ### HTML&CSS
@@ -57,4 +60,3 @@ Toto repo obsahuje moje vlastní řešení daných úkolů.
 - Node.js, npm
 - terminál
 - git
-  
