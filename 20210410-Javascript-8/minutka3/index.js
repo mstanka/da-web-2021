@@ -3,7 +3,7 @@
 const timeInputMinEl = document.querySelector('.time-input--min');
 const timeInputSecEl = document.querySelector('.time-input--sec');
 const btnStartEl = document.querySelector('.btn--start');
-const btnStopEl = document.querySelector('.btn--stop');
+const btnResetEl = document.querySelector('.btn--reset');
 const minutesEl = document.querySelector('.alarm__minutes');
 const secondsEl = document.querySelector('.alarm__seconds');
 const audioEl = document.querySelector('audio');
@@ -21,6 +21,7 @@ const countDown = () => {
   }
 
   if (time > 0 && time <= 59) {
+    minutesEl.textContent = '00';
     secondsEl.textContent = String(time).padStart(2, '0');
     btnStartEl.disabled = true;
   }
@@ -42,7 +43,7 @@ btnStartEl.addEventListener('click', () => {
   ringing = setInterval(countDown, 1000);
 });
 
-btnStopEl.addEventListener('click', () => {
+btnResetEl.addEventListener('click', () => {
   clearInterval(ringing);
   alarmEl.classList.remove('alarm--ring');
   audioEl.pause();
