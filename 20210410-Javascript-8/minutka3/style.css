@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: #4ecdc4;
+  height: 100vh;
+}
+
+.container {
+  max-width: 20rem;
+  margin: 2rem auto;
+}
+
+.alarm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  background-size: contain;
+  background-image: url('assets/alarm.svg');
+  background-repeat: no-repeat;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.alarm--ring {
+  animation: ring 100ms 50;
+}
+
+.alarm__seconds,
+.alarm__minutes {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+}
+
+.alarm__minutes {
+  font-weight: 700;
+}
+
+.alarm__seconds {
+  font-weight: 100;
+}
+
+.controls {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 20rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type='text'] {
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.time-input {
+  width: 3.5rem;
+}
+
+.btn {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-width: 20rem;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn--start {
+  background-color: #f4081e;
+}
+
+.btn--stop {
+  background-color: #464646;
+}
