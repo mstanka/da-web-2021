@@ -19,13 +19,28 @@ const handleAlarm = () => {
   audioEl.play();
 };
 
-window.addEventListener('load', () => {
-  ringing = setTimeout(handleAlarm, numOfSecond);
-});
-
 btnEl.addEventListener('click', () => {
   clearTimeout(ringing);
   btnEl.textContent = 'Zvonění zrušeno';
   alarmEl.classList.remove('alarm--ring');
   audioEl.pause();
 });
+
+window.addEventListener('load', () => {
+  ringing = setTimeout(handleAlarm, numOfSecond);
+});
+
+///////////////////////////////
+// const cas  = Number(prompt('Zadej cas: '));
+// const cudlik = document.querySelector('.btn-alarm');
+
+// let timerId = null;
+// cudlik.addEventListener('click', () => {
+//   clearTimeout(timerId);
+//   timerId = null;
+// })
+
+// setTimeout(() => {
+//   document.querySelector('.alarm').classList.add('alarm--ringing');
+//   document.querySelector('audio').play();
+// }, 5000);
