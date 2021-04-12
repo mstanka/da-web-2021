@@ -32,7 +32,7 @@ console.log(numbers);
 /////// Vypište na výstup druhé mocniny všech čísel.
 console.log('-------druhe mocniny vsech cisel');
 for (let i = 0; i < numbers.length; i++) {
-  // console.log(Math.sqrt(numbers[i]).toFixed(2)); // pro zaporna cisla dava NaN
+  // Math.pow(numbers[i], 2) - druha mocnina
   console.log(numbers[i] * numbers[i]);
 }
 
@@ -45,7 +45,7 @@ for (let i = 0; i < numbers.length; i++) {
 /////// Vypište na výstup absolutní hodnotu všech čísel.
 console.log('-------absolutni hodnota vsech cisel');
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] < 0) console.log(numbers[i] - numbers[i] * 2);
+  if (numbers[i] < 0) console.log(-numbers[i]);  // Math.abs()
   else console.log(numbers[i]);
 }
 
@@ -53,7 +53,7 @@ for (let i = 0; i < numbers.length; i++) {
 console.log('-------pouze cisla, jejichz absolutni hodnota je delitelna tremi');
 const numbersAbs = [];
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] < 0) numbersAbs.push(numbers[i] - numbers[i] * 2);
+  if (numbers[i] < 0) numbersAbs.push(-numbers[i]);
   else numbersAbs.push(numbers[i]);
 }
 for (let i = 0; i < numbersAbs.length; i++) {
@@ -75,7 +75,7 @@ for (let i = 0; i < numbers.length; i++) {
 ///// Vypište na výstup druhé mocnicny vzdáleností všech čísel od čísla 5.
 console.log('-------druhé mocnicny vzdáleností všech čísel od čísla 5');
 for (let i = 0; i < numbers.length; i++) {
-  console.log((numbers[i] - 5) * (numbers[i] - 5));
+  console.log(Math.pow((numbers[i] - 5), 2));
 }
 
 ///// Spočítejte, kolik je v seznamu záporných čísel.
