@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(#2a198f, #e22bb4);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h1::first-letter {
+  color: #e22bb4;
+  font-size: 6rem;
+}
+
+input {
+  border: 1px solid #2a198f;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+
+button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #2a198f;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #2a198f;
+  transition: all 0.7s;
+}
+
+button:hover {
+  background-color: rgb(139, 138, 138);
+  color: #fff;
+}
