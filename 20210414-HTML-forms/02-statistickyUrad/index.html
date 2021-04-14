@@ -14,26 +14,26 @@
 <body>
   <section class="section">
     <h1 class="title">Sběr dat</h1>
-    <form method="POST" action="http://formular.itgirls.cz/" class="form">
+    <form method="POST" action="http://formular.itgirls.cz/" class="form" autocomplete="on">
       <div class="form__section">
         <label for="first-name">Jméno: </label>
-        <input type="text" name='first-name'>
+        <input type="text" name='first-name' required autocomplete="name">
       </div>
       <div class="form__section">
         <label for="surname">Příjmení: </label>
-        <input type="text" name="surname">
+        <input type="text" name="surname" autocomplete="family-name">
       </div>
       <div class="form__section">
         <label for="birthdate">Datum narození: </label>
-        <input type="date" name="birthdate">
+        <input type="date" name="birthdate" autocomplete="bday">
       </div>
       <div class="form__section">
         <label for="email">Email: </label>
-        <input type="email" name="email">
+        <input type="email" name="email" autocomplete="email">
       </div>
       <div class="form__section">
         <label for="telephone">Telefon: </label>
-        <input type="tel" name="telephone">
+        <input type="tel" name="telephone" autocomplete="tel">
       </div>
       <div class="form__section">
         <label for="favorite-color">Oblíbená barva: </label>
@@ -77,11 +77,12 @@
       </div>
       <div class="form__section">
         <label for="truthful">Všechny uvedené údaje jsou pravdivé: </label>
-        <input type="checkbox" name="truthful" a value="yes">
+        <input type="checkbox" name="truthful" value="yes" required>
       </div>
       <button type="reset" class="btn btn--reset">Reset</button>
       <button type="submit" class="btn">Odeslat</button>
     </form>
   </section>
 </body>
+
 </html>

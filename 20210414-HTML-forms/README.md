@@ -1,4 +1,4 @@
 # Deployments
 
 [Googlič](https://googlic.vercel.app/)
-[Sber dat](https://)
+[Sber dat](https://sber-dat.vercel.app/)
