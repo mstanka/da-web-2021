@@ -8,7 +8,6 @@ const shoppingList = (data) => {
   for (let i = 0; i < data.length; i++) {
     sumList += `<li>${data[i]}</li>`;
   }
-  // console.log(sumList);
   return sumList;
 };
 

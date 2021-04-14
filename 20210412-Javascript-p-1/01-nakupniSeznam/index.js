@@ -14,9 +14,12 @@ console.log(newString);
 // 'mouka,máslo,cukr,jablka,skořice'
 let newString2 = '';
 for (let i = 0; i < list.length; i++) {
-  newString2 += `${list[i]},`;
+  if (i === 0) {
+    newString2 += `${list[i]}`;
+  }
+  newString2 += `,${list[i]}`;
 }
-console.log(newString2.slice(0, -1));
+console.log(newString2);
 
 // Upravte váš program tak, aby výsledný řětězec obsahoval HTML značky.
 // '<li>mouka</li><li>máslo</li><li>cukr</li><li>jablka</li><li>skořice</li>'
