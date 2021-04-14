@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Statisticky urad</title>
+</head>
+
+<body>
+  <section class="section">
+    <h1 class="title">Sběr dat</h1>
+    <form method="POST" action="http://formular.itgirls.cz/" class="form">
+      <div class="form__section">
+        <label for="first-name">Jméno: </label>
+        <input type="text" name='first-name'>
+      </div>
+      <div class="form__section">
+        <label for="surname">Příjmení: </label>
+        <input type="text" name="surname">
+      </div>
+      <div class="form__section">
+        <label for="birthdate">Datum narození: </label>
+        <input type="date" name="birthdate">
+      </div>
+      <div class="form__section">
+        <label for="email">Email: </label>
+        <input type="email" name="email">
+      </div>
+      <div class="form__section">
+        <label for="telephone">Telefon: </label>
+        <input type="tel" name="telephone">
+      </div>
+      <div class="form__section">
+        <label for="favorite-color">Oblíbená barva: </label>
+        <input type="color" name="favorite-color">
+      </div>
+      <div class="form__section">
+        <label for="favorite-number">Oblíbené číslo: </label>
+        <input type="number" name="favorite-number">
+      </div>
+      <div class="form__section">
+        <label for="website">Nejčastěji navštěvovaný web: </label>
+        <input type="url" name="website">
+      </div>
+      <div class="form__section">
+        <p>Nejoblíbenější roční období: </p>
+        <input type="radio" value="spring" name="favorite-season">
+        <label for="favorite-season">Jaro</label> <br>
+        <input type="radio" value="summer" name="favorite-season">
+        <label for="favorite-season">Léto</label> <br>
+        <input type="radio" value="autumn" name="favorite-season">
+        <label for="favorite-season">Podzim</label> <br>
+        <input type="radio" value="winter" name="favorite-season">
+        <label for="favorite-season">Zima</label>
+      </div>
+      <div class="form__section">
+        <span>Nejoblíbenější měsíc: </span>
+        <select name="favorite-month" id="favorite-month">
+          <option value="january">Leden</option>
+          <option value="february">Únor</option>
+          <option value="march">Březen</option>
+          <option value="april">Duben</option>
+          <option value="may">Květen</option>
+          <option value="june">Červen</option>
+          <option value="july">Červenec</option>
+          <option value="august">Srpen</option>
+          <option value="september">Září</option>
+          <option value="october">Říjen</option>
+          <option value="november">Listopad</option>
+          <option value="december">Prosiec</option>
+        </select>
+      </div>
+      <div class="form__section">
+        <label for="truthful">Všechny uvedené údaje jsou pravdivé: </label>
+        <input type="checkbox" name="truthful" a value="yes">
+      </div>
+      <button type="reset" class="btn btn--reset">Reset</button>
+      <button type="submit" class="btn">Odeslat</button>
+    </form>
+  </section>
+</body>
+</html>
