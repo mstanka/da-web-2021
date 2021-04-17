@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svatek v den</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- https://api.abalin.net/namedays?country=cz&month=2&day=13 -->
+  <form class="formular" action="https://api.abalin.net/namedays">
+    <label>
+      Zadej cislo dne:
+      <input name="day" class="day" />
+    </label>
+    <label>
+      Zadej cislo mesice:
+      <input name="month" class="month" />
+    </label>
+    <button class="btn" type="submit">Zjisti</button>
+  </form>
+  <p>Svátek má v tento den: <span class="svatek-dany-den">načítám</span></p>
+  <script src="index.js"></script>
+</body>
+
+</html>
