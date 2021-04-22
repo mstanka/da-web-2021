@@ -1,0 +1,10 @@
+.zone__select {
+  padding: 1rem;  
+}
+
+.zone__select select {
+  display: block;
+  padding: .5rem;
+  width: 80%;
+  margin: 0 auto;
+}

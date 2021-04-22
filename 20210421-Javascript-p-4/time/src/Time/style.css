@@ -1,0 +1,9 @@
+.time {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.datetime {
+  color: rgb(65, 47, 14);
+}
