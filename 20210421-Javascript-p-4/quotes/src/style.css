@@ -9,10 +9,7 @@ html {
 }
 
 .container {
-  width: 70vmin;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
-
-
