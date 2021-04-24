@@ -2,27 +2,25 @@
 
 import { roll } from '../helpers';
 
-const changeHTML = (element, props) => {
-  element.innerHTML = `
-    <div class="dice__side dice__side--${props}"></div>
-    <button class="btn btn--small roll-btn">hodit</button>
-  `;
-};
+const Dice = ({ side }) => {
+  const dice = document.createElement('div');
+  dice.classList.add('dice');
 
-const changeDice = (element) => {
-  let newSide = roll();
-  changeHTML(element, newSide);
-};
+  const diceSide = document.createElement('div');
+  diceSide.className = `dice__side dice__side--${side}`;
 
-const Dice = (props) => {
-  const element = document.createElement('div');
-  element.classList.add('dice');
-  changeHTML(element, props);
+  const button = document.createElement('button');
+  button.className = 'btn btn--small roll-btn';
+  button.textContent = 'hazej'
 
-  const btnEl = element.querySelector('.roll-btn');
-  btnEl.addEventListener('click', () => changeDice(element));
+  dice.appendChild(diceSide);
+  dice.appendChild(button);
 
-  return element;
+  button.addEventListener('click', () => {
+    diceSide.className = `dice__side dice__side--${roll()}`;
+  });
+
+  return dice;
 };
 
 export default Dice;
