@@ -16,7 +16,7 @@ Toto repo obsahuje moje vlastní řešení daných úkolů.
 - Minutka - appka pro odpočet času zadaného v minutách a sekundách || [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210410-Javascript-8/minutka3) || [View live](https://minutka3.vercel.app/)
 - Vyhledávač (Googlič) - [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210414-HTML-forms/01-vyhledavac) || [View Live](https://googlic.vercel.app/)
 - Sběr dat - formulář [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210414-HTML-forms/02-statistickyUrad) || [View Live](https://sber-dat.vercel.app/)
-- Café Lóra
+- Café Lóra - velké opakování HTML/CSS/Javascript || [Repo](https://github.com/mstanka/Cafe-Lora) || [View live](https://ecstatic-volhard-f658e6.netlify.app/)
 - Závěrečný projekt
 
 ---
