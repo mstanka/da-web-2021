@@ -1,0 +1,9 @@
+.account {
+  padding: 0.5rem 1rem;
+  background-color: chartreuse;
+  border-radius: 20px;
+}
+
+.messages {
+  text-align: right;
+}
