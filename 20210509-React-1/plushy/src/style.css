@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+}
+
+.plushies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plushy {
+  max-width: 40%; 
+}
+
+.plushy__image {
+  display: block;
+  width: 100%;
+}
+
+.plushy__name {
+  text-align: center;
+}
+
+.plushy__text {
+  max-width: 60%;
+  margin: 0 auto;
+}
