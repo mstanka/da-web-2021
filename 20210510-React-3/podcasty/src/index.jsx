@@ -11,7 +11,7 @@ const App = () => (
         key={episode.num}
         num={episode.num}
         title={episode.title}
-        guest={episode.title}
+        guest={episode.guest}
       />
     ))}
   </div>
