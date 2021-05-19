@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(./img/rocket.svg);
+  background-size: contain;
+}
+
+.navigation ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: block;
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 0.3rem;
+}
+
+.navigation ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  padding: 0.6rem 2rem;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a:active {
+  background-color: rgb(76, 173, 218);
+  color: #eee;
+}
+
+.navigation ul li a:focus {
+  outline: 3px dotted black;
+}
