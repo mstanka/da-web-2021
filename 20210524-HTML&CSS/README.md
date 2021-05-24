@@ -8,12 +8,13 @@ Udělej si fork tohoto repozitáře a jak už to umíš, naklonuj si ho k sobě.
 
 ### Seznámení
 
-Otevři si ```index.html``` a prohlédni si stránku v devtools. Zkus se na ní podívat v různých šířkách.
+Otevři si `index.html` a prohlédni si stránku v devtools. Zkus se na ní podívat v různých šířkách.
 Podívej se na HTML a CSS. Ve složce `style-basis.css` je už nachystané nějaké stylování. Ty své styly piš do `style.css`. V HTML není potřeba nic upravovat, mazat, ani přidávat, pouze se podívej na jeho strukturu!
 Ve složce result se podívej na obrázky výsledné stránky v různých šířkách.
 
-## Stylování 
-Začneme pěkně mobile first, doporučuji nejdřív ve stylování psát styly pro mobil, pak pokračovat na tablet, laptop a nakonec desktop. 
+## Stylování
+
+Začneme pěkně mobile first, doporučuji nejdřív ve stylování psát styly pro mobil, pak pokračovat na tablet, laptop a nakonec desktop.
 
 ### Navigace
 
@@ -40,6 +41,8 @@ Podívej se, jak rozložení kartiček vypadá na různých šířkách a nastyl
 
 Zamysli se, jak bys stránku oživila. Co by se mohlo stát při kliknutí na jednotlivé elementy? Kde by se mohly brát data? Jak bysis stránku navrhla, pokud bys ji psala v reactu?
 
-## Skvělá práce!
+## Skvělá práce
 
 Dej si čaj (anebo vínko ;)) a pročti si jednotlivé články, na které jsou na stránce odkazy.
+
+[My solution]('https://flexbox-mstanka.vercel.app/')
