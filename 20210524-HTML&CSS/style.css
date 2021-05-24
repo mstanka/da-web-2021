@@ -1,0 +1,86 @@
+/*------------Tady piš svoje stylování --------------*/
+.social-media {
+  flex-basis: 40%;
+}
+
+.photos {
+  overflow-x: auto;
+}
+
+.date {
+  position: relative;
+}
+
+.date__busy {
+  position: absolute;
+  top: 10px;
+}
+
+.newsletter__image {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .social-media {
+    flex-basis: 30%;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card--md,
+  .card--sm {
+    flex-basis: 49%;
+  }
+
+  .card--lg,
+  .card--wide {
+    width: 100%;
+  }
+
+  .newsletter__image {
+    display: block;
+  }
+
+  .newsletter__article {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .social-media {
+    flex-basis: 20%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .newsletter__article {
+    flex-basis: 49%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media {
+    flex-basis: 15%;
+  }
+
+  .card--md {
+    flex-basis: 32%;
+  }
+
+  .card--wide:last-child {
+    flex-basis: 32%;
+    order: -1;
+  }
+
+  .newsletter__article {
+    flex-basis: 32%;
+  }
+}
