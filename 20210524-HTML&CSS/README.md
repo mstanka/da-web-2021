@@ -1,5 +1,7 @@
 # HTML a CSS - opakování
 
+[View my solution](https://flexbox-mstanka.vercel.app/)
+
 V dnešním opakování si vezmeme předpřipravenou webovou stránku a doplníme do ní responzivitu. Procvičíme si flexbox, pozicování, i media queries!
 
 ## Založení projektu
@@ -44,5 +46,3 @@ Zamysli se, jak bys stránku oživila. Co by se mohlo stát při kliknutí na je
 ## Skvělá práce
 
 Dej si čaj (anebo vínko ;)) a pročti si jednotlivé články, na které jsou na stránce odkazy.
-
-[My solution]('https://flexbox-mstanka.vercel.app/')
