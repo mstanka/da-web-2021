@@ -2,11 +2,12 @@
 
 // Rodné číslo se skládá z deseti číslic. Prvních šest číslic popisuje datum narození ve formátu RRMMDD, tj. po dvou číslicích pro rok, měsíc a den narození. Např. 701020 označuje datum narození 20. října 1970. Přitom ženy mají k měsíci narození připočteno 50 (tzn. 706020 označuje ženu narozenou 20. října 1970). Zbytek rodného čísla (tzv. koncovka) odlišuje osoby stejného pohlaví narozené ve stejný den a zpravidla se odděluje lomítkem. My jej však lomítkem oddělovat nebudeme. Celé rodné číslo musí být beze zbytku dělitelná jedenácti, aby bylo možno snadno detekovat překlepy či jiné náhodné chyby.
 
-const birthNumber = document.querySelector('#input').value;
+// const birthNumber = document.querySelector('#input').value;
+// console.log(birthNumber);
 // const formEl = document.getElementById('form');
-const btnEl = document.querySelector('#btn');
-const messageEl = document.getElementById('message');
-const digitsEl = document.getElementById('digits');
+// const btnEl = document.querySelector('#btn');
+// const messageEl = document.querySelector('#message');
+// const digitsEl = document.querySelector('.digits');
 
 ////////////////////////////////////////////////////
 ////// Cvičení: Hodnoty, proměnné, podmínky, funkce
@@ -142,66 +143,57 @@ const digitsEl = document.getElementById('digits');
 
 // Vaše aplikce by měla ve výsledku fungovat tak, že kdykoliv uživatel zadá rodné číslo a nechá si jej zkontrolovat, aplikace vypíše, zda je číslo zadané dobře nebo špatně, a zobrazí jednotlivé znaky čísla s tím, že cifry jsou zelené a špatně zadané znaky jsou červené.
 
-const checkBirthID = (birthNumber) => {
-  if (
-    birthNumber.length === 10 && //     !isNaN(birthNumber) &&
-    typeof Number(birthNumber) &&
-    Number.isInteger(Number(birthNumber)) &&
-    Number(birthNumber) % 11 === 0
-  ) {
-    return true;
-  }
-  return false;
-};
-
-console.log(checkBirthID(birthNumber));
-console.log(birthNumber);
-
+const btnEl = document.querySelector('#btn');
+const messageEl = document.querySelector('#message');
+const digitsEl = document.querySelector('.digits');
 const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-const isDigit = (myString) => {
-  return digits.includes(myString);
-};
+const handleClick = () => {
+  const birthNumber = document.querySelector('#input').value; 
 
-if (!checkBirthID(birthNumber)) {
-  for (let i = 0; i < birthNumber.length; i++) {
-    if (!isDigit(birthNumber[i])) {
-      console.log(birthNumber[i]);
+  btnEl.disabled = true;
+  document.querySelector('#input').value = ' ';
+
+  const checkBirthID = (birthNumber) => {
+    if (
+      birthNumber.length === 10 &&
+      typeof Number(birthNumber) &&
+      Number.isInteger(Number(birthNumber)) &&
+      Number(birthNumber) % 11 === 0
+    ) {
+      return true;
     }
-  }
-}
+    return false;
+  };
 
-const numberArr = Array.from(birthNumber);
-const filtered = numberArr.filter((num) => !isDigit(num));
-console.log(filtered);
+  const isDigit = (myString) => {
+    return digits.includes(myString);
+  };
 
-console.log(numberArr);
-const numberObj = numberArr.map((num) => ({
-  char: num,
-  digit: isDigit(num),
-}));
-console.log(numberObj);
+  const numberArr = Array.from(birthNumber);
+  const filtered = numberArr.filter((num) => !isDigit(num));
 
-const Digit = ({ char, digit }) => {
-  return `
-  <span class=${digit === true ? 'green' : 'red'}>${char}<span>
- `;
-};
+  const numberObj = numberArr.map((num) => ({
+    char: num,
+    digit: isDigit(num),
+  }));
+  console.log(numberObj);
 
-btnEl.addEventListener('click', () => {
-  // e.preventDefault();
-  console.log(birthNumber);
+  const Digit = ({ char, digit }) => {
+    return `
+      <span class=${digit === true ? 'green' : 'red'}>${char}<span>
+    `;
+  };
 
-  if (checkBirthID(birthNumber)) {
-    console.log(filtered.length);
-    if (filtered.length === 0) {
-      messageEl.textContent = 'V pořádku';
-    } else {
-      messageEl.textContent = 'V rodném čísle jsou chyby';
-    }
+  if (checkBirthID(birthNumber) && filtered.length === 0) {
+    messageEl.textContent = 'V pořádku';
+  } else {
+    messageEl.textContent = 'V rodném čísle jsou chyby';
   }
 
   for (const index in numberObj) {
     digitsEl.innerHTML += Digit(numberObj[index]);
   }
-});
+};
+
+btnEl.addEventListener('click', handleClick);
