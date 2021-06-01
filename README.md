@@ -18,6 +18,7 @@ Toto repo obsahuje moje vlastní řešení daných úkolů.
 - Sběr dat - formulář [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210414-HTML-forms/02-statistickyUrad) || [View Live](https://sber-dat.vercel.app/)
 - Café Lóra - velké opakování HTML/CSS/Javascript || [Repo](https://github.com/mstanka/Cafe-Lora) || [View live](https://ecstatic-volhard-f658e6.netlify.app/)
 - LeviExpress - velké opakování React [Repo](https://github.com/mstanka/da-leviexpress) || [View live](https://da-leviexpress.vercel.app/)
+- Nákupní seznam - React a napojení na Firebase [Repo](https://github.com/mstanka/da-web-2021/tree/main/20210531-Firebase/shoppinglist) || [View live](https://shoppinglist-five.vercel.app/)
 - Informační web o závěrečném projektu [Repo](https://github.com/mstanka/da-oprojektu) || [View live](https://da-oprojektu.vercel.app/)
 - Závěrečný projekt
 
