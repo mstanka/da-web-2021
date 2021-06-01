@@ -37,7 +37,6 @@ const ShoppingList = () => {
                   checked: e.target.checked,
                 }),
               );
-              console.log(checked); // Promise {<fulfilled>: undefined}
             }}
           />
           <Link to={`/detail/${item.id}`} className={styles.link}>
