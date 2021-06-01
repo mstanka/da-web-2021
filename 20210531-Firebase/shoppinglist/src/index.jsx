@@ -8,15 +8,18 @@ import './style.css';
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route path="/detail/:id">
-        <Detail />
-      </Route>
-      <Route path="/">
-        <ShoppingList />
-        <Form />
-      </Route>
-    </Switch>
+    <div className="container">
+      <h1 className="title">Shopping List</h1>
+      <Switch>
+        <Route path="/detail/:id">
+          <Detail />
+        </Route>
+        <Route path="/">
+          <ShoppingList />
+          <Form />
+        </Route>
+      </Switch>
+    </div>
   </Router>
 );
 

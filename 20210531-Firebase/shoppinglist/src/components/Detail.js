@@ -1,6 +1,7 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { db } from '../db';
+import styles from './detail.module.css'
 
 const Detail = () => {
   const [item, setItem] = useState(null);
@@ -19,12 +20,24 @@ const Detail = () => {
   console.log(item);
 
   return (
-    <Fragment>
-      <h1>Detail</h1>
-      <p>Id: {id}</p>
-      <pre>{JSON.stringify(item, null, 2)}</pre>
-      <Link to="/">Back to ShoppingList</Link>
-    </Fragment>
+    <div className={styles.wrapper}>
+      {!item ? (
+        <p>Loading....</p>
+      ) : (
+        <>
+          <h3>Item detail</h3>
+          {/* <p>Id: {id}</p>
+              <pre>{JSON.stringify(item, null, 2)}</pre>*/}
+          <h1 className={styles.item}>{item.name}</h1>
+          <div className={styles.date}>
+            Creation date: {item.creationDate.toDate().toLocaleString()}
+          </div>
+          <Link to="/" className={styles.link}>
+            Back to ShoppingList &#8702;
+          </Link>
+        </>
+      )}
+    </div>
   );
 };
 

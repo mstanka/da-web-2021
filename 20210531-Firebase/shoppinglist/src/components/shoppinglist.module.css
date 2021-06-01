@@ -1,0 +1,34 @@
+.list {
+  padding: 0;
+  max-width: 24rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.item {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item > * {
+  flex-basis: 25%;
+}
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc8774;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 0.3rem 0.5rem;
+  background: #c5b8a8;
+  border: 1px solid #7e7e7e;
+  box-shadow: 1px 1px 2px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

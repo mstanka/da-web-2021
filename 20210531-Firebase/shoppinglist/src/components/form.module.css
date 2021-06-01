@@ -1,0 +1,27 @@
+.form {
+  max-width: 24rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 1rem;
+  background: #ddcbc0;
+  border: 1px solid #7e7e7e;
+  box-shadow: 1px 1px 4px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.input {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.btn {
+  padding: 0.3rem 0.5rem;
+  background: #c5b8a8;
+  border: 1px solid #7e7e7e;
+  box-shadow: 1px 1px 2px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

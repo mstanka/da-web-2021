@@ -1,42 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../db';
+import styles from './shoppinglist.module.css';
 
 const ShoppingList = () => {
   const [items, setItems] = useState([]);
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    return db.collection('list').onSnapshot((querySnapshot) => {
-      setItems(
-        querySnapshot.docs.map((doc) => {
-          const data = doc.data();
-          data.id = doc.id;
-          return data;
-        }),
-      );
-    });
-  }, [items]);
+    return db
+      .collection('list')
+      .orderBy('creationDate')
+      .onSnapshot((querySnapshot) => {
+        setItems(
+          querySnapshot.docs.map((doc) => {
+            const data = doc.data();
+            data.id = doc.id;
+            return data;
+          }),
+        );
+      });
+  }, []);
 
   return (
-    <ul>
+    <ul className={styles.list}>
       {items.map((item) => (
-        <li key={item.id}>
+        <li key={item.id} className={styles.item}>
           {' '}
           <input
             type="checkbox"
             checked={item.checked}
             onChange={(e) => {
-              e.preventDefault();
               setChecked(() => !checked);
-              db.collection('list').doc(item.id).update({
-                checked: e.target.checked,
-              });
+              setChecked(
+                db.collection('list').doc(item.id).update({
+                  checked: e.target.checked,
+                }),
+              );
+              console.log(checked); // Promise {<fulfilled>: undefined}
             }}
           />
-          <Link to={`/detail/${item.id}`}>{item.name}</Link>
-          {' '}
+          <Link to={`/detail/${item.id}`} className={styles.link}>
+            {item.name}
+          </Link>{' '}
           <button
+            className={styles.btn}
             onClick={() => {
               db.collection('list').doc(item.id).delete();
             }}

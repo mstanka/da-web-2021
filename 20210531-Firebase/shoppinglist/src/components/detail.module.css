@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0 2rem;
+}
+
+.item {
+  text-transform: uppercase;
+  color: #bc8774;
+}
+
+.date {
+  text-transform: lowercase;
+  font-size: small;
+  margin: 2rem 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #dbbba0;
+  font-weight: 700;
+}
